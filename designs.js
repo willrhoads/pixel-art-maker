@@ -3,8 +3,13 @@ var color = document.getElementById('colorPicker');
 // Select size input
 var size = document.getElementById('sizePicker');
 // When size is submitted by the user, call makeGrid()
+var canvas = document.getElementById('pixelCanvas');
+function clear(){
+  canvas.innerHTML = "";
+}
+
 function makeGrid() {
-  var canvas = document.getElementById('pixelCanvas');
+  clear()
   var height = document.getElementById('inputHeight').value;
   var width = document.getElementById('inputWidth').value;
   for (var h = 0; h < height; h++){
