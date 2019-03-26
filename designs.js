@@ -8,10 +8,10 @@ function makeGrid() {
   var canvas = document.getElementById('pixelCanvas');
   var height = document.getElementById('inputHeight').value;
   var width = document.getElementById('inputWidth').value;
-  for var h = 0; h < height; h++){
+  for (var h = 0; h < height; h++){
     var row = document.createElement('tr');
     canvas.appendChild(row);
-    for var w = 0; w < width; w++){
+    for (var w = 0; w < width; w++){
       var col = document.createElement('td');
       canvas.appendChild(column);
     }
