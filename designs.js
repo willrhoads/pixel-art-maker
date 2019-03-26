@@ -7,13 +7,6 @@ var size = document.getElementById('sizePicker');
 // Set canvas variable
 var canvas = document.getElementById('pixelCanvas');
 
-// Function to set color of brush
-function colorSelection(){
-  var colorPick = color.value;
-  canvas.style.color = colorPick;
-  return colorPick;
-
-}
 // Function to clear grid for new canvas
 function clear(){
   canvas.innerHTML = "";
@@ -34,8 +27,8 @@ function makeGrid() {
   }
 // Function to change cell color with user's selected color
   canvas.addEventListener('click', function(){
-    if(event.target && event.target.nodeName == "TD"){
-      event.target.style.backgroundColor = colorSelection();
+    if(event.target.nodeName == "TD"){
+      event.target.style.backgroundColor = color.value;
     }
   })
 }
