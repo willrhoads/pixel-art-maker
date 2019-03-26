@@ -6,4 +6,4 @@ A simple pixel art maker built for a Udacity class.
 
 ## Sources
 
-Created with started code provided by the Udacity team.
+Created with starter code provided by the Udacity team.
