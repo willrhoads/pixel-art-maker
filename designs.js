@@ -1,8 +1,7 @@
 // Select color input
 var color = document.getElementById('colorPicker');
 // Select size input
-var height = document.getElementById('inputHeight');
-var width = document.getElementById('inputWidth');
+var size = document.getElementById('sizePicker');
 // When size is submitted by the user, call makeGrid()
 function makeGrid() {
   var canvas = document.getElementById('pixelCanvas');
@@ -13,7 +12,13 @@ function makeGrid() {
     canvas.appendChild(row);
     for (var w = 0; w < width; w++){
       var col = document.createElement('td');
-      canvas.appendChild(column);
+      canvas.appendChild(col);
     }
   }
 }
+
+
+size.addEventListener('submit', function(event){
+  event.preventDefault();
+  makeGrid();
+});
