@@ -14,7 +14,7 @@ function clear(){
 
 // Function to make the grid
 function makeGrid() {
-  clear()
+  clear();
   var height = document.getElementById('inputHeight').value;
   var width = document.getElementById('inputWidth').value;
   for (var h = 0; h < height; h++){
